@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  Example
-//
-//  Created by Łukasz Śliwiński on 30 Apr 2020.
-//  Copyright © 2020 plum. All rights reserved.
-//
+// Copyright © 2020 plum. All rights reserved.
 
 import UIKit
 
@@ -28,8 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ///   - application: The UIApplication
     ///   - launchOptions: The LaunchOptions
     /// - Returns: The launch result
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
         // Initialize UIWindow
         self.window = .init(frame: UIScreen.main.bounds)
         // Set RootViewController

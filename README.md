@@ -23,18 +23,23 @@
 # ObservableThemeKit
 
 <p align="center">
-ℹ️ Short description of ObservableThemeKit
+ObservableThemeKit framework allows to easily theme an application. It utilizes protocol oriented programming, property wrapper and observable pattern which allows to customize every aspect of a theme specification for your requirements.
 </p>
+
 
 ## Features
 
-- [x] ℹ️ Add ObservableThemeKit features
+- [x] Uses property wrappers to easlily access a defined theme
+- [x] Allows to observe theme's style changes (it could be anything, it depends on you, e.g. _light_ to _dark_ transition)
+- [x] You can define any style (stylesheet) that will be used in the themes
 
 ## Example
 
 The example application is the best way to see `ObservableThemeKit` in action. Simply open the `ObservableThemeKit.xcodeproj` and run the `Example` scheme.
 
-## Installation
+## Playground
+
+The playground beyond the example application allows to quickly check the usage of the framework. Simply open `ObservableThemeKit.xcworkspace` and pick `ObservableThemeKitPlayground` from the Xcode's _Project navigator._
 
 ### CocoaPods
 
@@ -77,7 +82,109 @@ If you prefer not to use any of the aforementioned dependency managers, you can 
 
 ## Usage
 
-ℹ️ Describe the usage of your Kit
+The best way is to take a look at the [example app](##Example) and the [playground](##Playground).
+
+The main concept of the framework is around the `Theme` protocol:
+
+```swift
+public protocol Theme {
+    associatedtype Style
+    init(stylesheet: Style)
+    static var `default`: Self { get }
+    static var stylesheet: Observable<Style> { get }
+}
+```
+
+The idea is to provide a `Style` that will be used by themes e.g:
+
+```swift
+struct AppStylesheet {
+    let accentColor: UIColor
+}
+```
+
+Then you can declare the first theme like so:
+
+```swift
+struct ViewTheme: Theme {
+    static let `default`: ViewController.ViewTheme = .init(stylesheet: AppStylesheet())
+    static let stylesheet: Observable = Observable(AppStylesheet())
+  
+    let labelColor: UIColor
+
+    init(stylesheet: AppStylesheet) {
+        self.labelColor = stylesheet.accentColor
+    }
+}
+```
+
+The last step is to use the theme using the `ObservableTheme` _property wrapper_ which gives you freedom that the theme could be used anywhere e.g.:
+
+```swift
+class ViewController: UIViewController {
+		@ObservableTheme var theme: ViewTheme
+}
+```
+
+The `theme` can be observed on when the `stylesheet` has changed:
+
+```swift
+class ViewController: UIViewController {
+		@ObservableTheme var theme: ViewTheme
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.$theme.observe(
+            owner: self,
+            handler: { (owner, _) in
+                owner.setupAppearance()
+            }
+        )
+    }
+}
+```
+
+`ObservableTheme` provides `projectedValue` which is `Observable`.
+
+
+
+It is important to mention that the `ViewTheme` implements the `Theme` protocol which means that the `struct` needs to provide
+
+`default`, `stylesheet` `static` properties and the constructor `init` .
+
+It is used by the `ObservableTheme` to instantiate the theme, observe the changes of the `stylesheet` and instantiate the new theme on every change and put it back via mentioned observable `projectedValue` .
+
+Because most of the time this is not useful to have declaration of the theme like so, especially the `stylesheet` property:
+
+```swift
+struct ViewTheme: Theme {
+    static let `default`: ViewController.ViewTheme = .init(stylesheet: AppStylesheet())
+    static let stylesheet: Observable = Observable(AppStylesheet())
+		...
+}
+```
+
+If personally find useful to declare default implementation of the `stylesheet` in the `extension`:
+
+```swift
+extension Theme {
+    /// Default stylesheet for the convenience
+    static var stylesheet: Observable<Stylesheet> {
+        return AppStylesheet.shared
+    }
+}
+```
+
+Having that you can then declare a theme:
+
+```swift
+struct ViewTheme: Theme {
+    static let `default`: ViewController.ViewTheme = .init(stylesheet: Self.stylesheet.wrappedValue)
+		...
+}
+```
+
+But as you will find in the examples, there is a lot of ways how you can provide the `default` and `stylesheet`. It is up to you, it might be singleton, global variable or any other solution that will suit your needs.
 
 ## Contributing
 Contributions are very welcome 🙌

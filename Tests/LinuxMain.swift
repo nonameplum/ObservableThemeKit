@@ -1,6 +1,1 @@
-import XCTest
-@testable import ObservableThemeKitTests
-
-XCTMain([
-    testCase(ObservableThemeKitTests.allTests),
-])
+fatalError("Run the tests with `swift test --enable-test-discovery`.")

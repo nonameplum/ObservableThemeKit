@@ -7,16 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D9C42A222745900000A6585 /* ObservableThemeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* ObservableThemeKit.swift */; };
-		3D9C42B1227459C1000A6585 /* ObservableThemeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* ObservableThemeKit.swift */; };
-		3D9C42BF227459F6000A6585 /* ObservableThemeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* ObservableThemeKit.swift */; };
-		3D9C42CD22745A28000A6585 /* ObservableThemeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* ObservableThemeKit.swift */; };
+		3566337524A0964200E8ADB3 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3566337424A0964200E8ADB3 /* Stylesheet.swift */; };
+		35909825248E754D00AC36D7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35909824248E754D00AC36D7 /* Theme.swift */; };
+		35909826248E754D00AC36D7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35909824248E754D00AC36D7 /* Theme.swift */; };
+		35909827248E754D00AC36D7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35909824248E754D00AC36D7 /* Theme.swift */; };
+		35909828248E754D00AC36D7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35909824248E754D00AC36D7 /* Theme.swift */; };
+		3590982A248E757B00AC36D7 /* ObservableTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35909829248E757B00AC36D7 /* ObservableTheme.swift */; };
+		3590982B248E757B00AC36D7 /* ObservableTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35909829248E757B00AC36D7 /* ObservableTheme.swift */; };
+		3590982C248E757B00AC36D7 /* ObservableTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35909829248E757B00AC36D7 /* ObservableTheme.swift */; };
+		3590982D248E757B00AC36D7 /* ObservableTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35909829248E757B00AC36D7 /* ObservableTheme.swift */; };
+		3590982F248F75B100AC36D7 /* ObservableThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3590982E248F75B100AC36D7 /* ObservableThemeTests.swift */; };
+		35B215EB245AB8CF00D93593 /* ObserverCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B215EA245AB8CF00D93593 /* ObserverCancellable.swift */; };
+		35B215EC245AB8CF00D93593 /* ObserverCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B215EA245AB8CF00D93593 /* ObserverCancellable.swift */; };
+		35B215ED245AB8CF00D93593 /* ObserverCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B215EA245AB8CF00D93593 /* ObserverCancellable.swift */; };
+		35B215EE245AB8CF00D93593 /* ObserverCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B215EA245AB8CF00D93593 /* ObserverCancellable.swift */; };
+		35B215F0245AB94B00D93593 /* ObserverCancellableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B215EF245AB94B00D93593 /* ObserverCancellableTests.swift */; };
+		35B215F3245ABDEC00D93593 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B215F2245ABDEC00D93593 /* XCTestCase+Extensions.swift */; };
+		35B215F5245AC2E300D93593 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B215F4245AC2E300D93593 /* Observable.swift */; };
+		35B215F6245AC2E300D93593 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B215F4245AC2E300D93593 /* Observable.swift */; };
+		35B215F7245AC2E300D93593 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B215F4245AC2E300D93593 /* Observable.swift */; };
+		35B215F8245AC2E300D93593 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B215F4245AC2E300D93593 /* Observable.swift */; };
+		35B215FA245AC30D00D93593 /* ObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B215F9245AC30D00D93593 /* ObservableTests.swift */; };
 		3D9C42F62274604A000A6585 /* ObservableThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* ObservableThemeKit.framework */; };
-		3D9C42FC22746078000A6585 /* ObservableThemeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* ObservableThemeKitTests.swift */; };
 		3D9C43062274611B000A6585 /* ObservableThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C42A92274599D000A6585 /* ObservableThemeKit.framework */; };
-		3D9C430C22746131000A6585 /* ObservableThemeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* ObservableThemeKitTests.swift */; };
 		3D9C431622746198000A6585 /* ObservableThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C42C522745A07000A6585 /* ObservableThemeKit.framework */; };
-		3D9C431C227461AF000A6585 /* ObservableThemeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* ObservableThemeKitTests.swift */; };
 		3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43232274629B000A6585 /* AppDelegate.swift */; };
 		3D9C43262274629B000A6585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43252274629B000A6585 /* ViewController.swift */; };
 		3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432A2274629C000A6585 /* Assets.xcassets */; };
@@ -71,10 +85,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3566337424A0964200E8ADB3 /* Stylesheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
+		35909824248E754D00AC36D7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		35909829248E757B00AC36D7 /* ObservableTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTheme.swift; sourceTree = "<group>"; };
+		3590982E248F75B100AC36D7 /* ObservableThemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableThemeTests.swift; sourceTree = "<group>"; };
+		35B215EA245AB8CF00D93593 /* ObserverCancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverCancellable.swift; sourceTree = "<group>"; };
+		35B215EF245AB94B00D93593 /* ObserverCancellableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverCancellableTests.swift; sourceTree = "<group>"; };
+		35B215F2245ABDEC00D93593 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		35B215F4245AC2E300D93593 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		35B215F9245AC30D00D93593 /* ObservableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTests.swift; sourceTree = "<group>"; };
 		3D9C429022745894000A6585 /* ObservableThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObservableThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429C227458E8000A6585 /* ObservableThemeKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ObservableThemeKit.plist; sourceTree = "<group>"; };
 		3D9C429D227458E8000A6585 /* ObservableThemeKitTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ObservableThemeKitTests.plist; sourceTree = "<group>"; };
-		3D9C42A122745900000A6585 /* ObservableThemeKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableThemeKit.swift; sourceTree = "<group>"; };
 		3D9C42A92274599D000A6585 /* ObservableThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObservableThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C42B7227459D6000A6585 /* ObservableThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObservableThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C42C522745A07000A6585 /* ObservableThemeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObservableThemeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +105,6 @@
 		3D9C42D422745B48000A6585 /* ObservableThemeKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ObservableThemeKit.podspec; sourceTree = SOURCE_ROOT; };
 		3D9C42D522745B48000A6585 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		3D9C42D622745C9D000A6585 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = SOURCE_ROOT; };
-		3D9C42D722745CDE000A6585 /* ObservableThemeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableThemeKitTests.swift; sourceTree = "<group>"; };
 		3D9C42D822745DAF000A6585 /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .jazzy.yaml; sourceTree = SOURCE_ROOT; };
 		3D9C42D922745DAF000A6585 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		3D9C42DB22745DB0000A6585 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
@@ -164,6 +185,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35B215F1245ABDC700D93593 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				35B215F2245ABDEC00D93593 /* XCTestCase+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		3D9C428622745894000A6585 = {
 			isa = PBXGroup;
 			children = (
@@ -204,9 +233,6 @@
 				3D9C42D822745DAF000A6585 /* .jazzy.yaml */,
 				3D9C42D922745DAF000A6585 /* .swiftlint.yml */,
 				3DB91AC4229AC263002668DA /* .travis.yml */,
-				3DB91AC5229AC26C002668DA,
-				3DB91AC6229AC272002668DA,
-				3DF6F6282315616D00706C4E,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -214,7 +240,10 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3D9C42A122745900000A6585 /* ObservableThemeKit.swift */,
+				35B215EA245AB8CF00D93593 /* ObserverCancellable.swift */,
+				35B215F4245AC2E300D93593 /* Observable.swift */,
+				35909824248E754D00AC36D7 /* Theme.swift */,
+				35909829248E757B00AC36D7 /* ObservableTheme.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -222,8 +251,11 @@
 		3D9C42A32274595F000A6585 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				35B215F1245ABDC700D93593 /* Helpers */,
 				3D9C42EC22745FDA000A6585 /* LinuxMain.swift */,
-				3D9C42D722745CDE000A6585 /* ObservableThemeKitTests.swift */,
+				35B215EF245AB94B00D93593 /* ObserverCancellableTests.swift */,
+				35B215F9245AC30D00D93593 /* ObservableTests.swift */,
+				3590982E248F75B100AC36D7 /* ObservableThemeTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -233,6 +265,7 @@
 			children = (
 				3D9C43232274629B000A6585 /* AppDelegate.swift */,
 				3D9C43252274629B000A6585 /* ViewController.swift */,
+				3566337424A0964200E8ADB3 /* Stylesheet.swift */,
 				3D9C4333227462B9000A6585 /* Resources */,
 			);
 			path = Example;
@@ -456,6 +489,7 @@
 					};
 					3D9C42F02274604A000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1140;
 					};
 					3D9C43002274611B000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -634,7 +668,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42A222745900000A6585 /* ObservableThemeKit.swift in Sources */,
+				35B215EB245AB8CF00D93593 /* ObserverCancellable.swift in Sources */,
+				35909825248E754D00AC36D7 /* Theme.swift in Sources */,
+				3590982A248E757B00AC36D7 /* ObservableTheme.swift in Sources */,
+				35B215F5245AC2E300D93593 /* Observable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,7 +679,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42B1227459C1000A6585 /* ObservableThemeKit.swift in Sources */,
+				35B215EC245AB8CF00D93593 /* ObserverCancellable.swift in Sources */,
+				35909826248E754D00AC36D7 /* Theme.swift in Sources */,
+				3590982B248E757B00AC36D7 /* ObservableTheme.swift in Sources */,
+				35B215F6245AC2E300D93593 /* Observable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +690,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42BF227459F6000A6585 /* ObservableThemeKit.swift in Sources */,
+				35B215ED245AB8CF00D93593 /* ObserverCancellable.swift in Sources */,
+				35909827248E754D00AC36D7 /* Theme.swift in Sources */,
+				3590982C248E757B00AC36D7 /* ObservableTheme.swift in Sources */,
+				35B215F7245AC2E300D93593 /* Observable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +701,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42CD22745A28000A6585 /* ObservableThemeKit.swift in Sources */,
+				35B215EE245AB8CF00D93593 /* ObserverCancellable.swift in Sources */,
+				35909828248E754D00AC36D7 /* Theme.swift in Sources */,
+				3590982D248E757B00AC36D7 /* ObservableTheme.swift in Sources */,
+				35B215F8245AC2E300D93593 /* Observable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,7 +712,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42FC22746078000A6585 /* ObservableThemeKitTests.swift in Sources */,
+				3590982F248F75B100AC36D7 /* ObservableThemeTests.swift in Sources */,
+				35B215F3245ABDEC00D93593 /* XCTestCase+Extensions.swift in Sources */,
+				35B215FA245AC30D00D93593 /* ObservableTests.swift in Sources */,
+				35B215F0245AB94B00D93593 /* ObserverCancellableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,7 +723,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C430C22746131000A6585 /* ObservableThemeKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +730,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C431C227461AF000A6585 /* ObservableThemeKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +739,7 @@
 			files = (
 				3D9C43262274629B000A6585 /* ViewController.swift in Sources */,
 				3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */,
+				3566337524A0964200E8ADB3 /* Stylesheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1102,6 +1150,7 @@
 		3D9C42FA2274604A000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/ObservableThemeKitTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1112,6 +1161,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.plum.ObservableThemeKit-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1120,6 +1170,7 @@
 		3D9C42FB2274604A000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/ObservableThemeKitTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
