@@ -6,6 +6,7 @@ import Foundation
 ///
 /// # Reference:
 /// `Theme`
+/// [Theme](x-source-tag://Theme)
 @propertyWrapper
 public struct ObservableTheme<Value> where Value: Theme {
     private let observableValue: Observable<Value>
