@@ -2,6 +2,7 @@
 
 import Foundation
 
+/// An object that allows to observe changes mades to a value that it holds.
 @propertyWrapper
 public class Observable<T> {
     // MARK: Properties
@@ -9,6 +10,7 @@ public class Observable<T> {
     private var _value: T
     private let lock = NSRecursiveLock()
 
+    /// The underlying value referenced by the observable.
     public var wrappedValue: T {
         set {
             lock.lock()
@@ -26,11 +28,18 @@ public class Observable<T> {
     }
 
     // MARK: Initialization
+
+    /// Creates and returns a new observable with passed initial value
+    /// - Parameter value: The initial value
     public init(_ value: T) {
         self._value = value
     }
 
     // MARK: Observe
+
+    /// Observe (subscribe) to the value changes that returns cancellable
+    /// - Parameter handler: An handler that will be called on every value change. It passes the changed value.
+    /// - Returns: A cancellable object that allows to stop observation
     @discardableResult
     public func observe(handler: @escaping (T) -> Void) -> ObserverCancellable {
         lock.lock()
@@ -46,6 +55,11 @@ public class Observable<T> {
         }
     }
 
+    /// Observe (subscribe) to the value changes with an owner object that is used to hold the subscription
+    /// as long as the owner is not deallocated.
+    /// - Parameters:
+    ///   - owner: An owner object that is used to keep the observation alive
+    ///   - handler: An handler that will be called on each value change. It passes the weakified owner and the value.
     public func observe<O: AnyObject>(owner: O, handler: @escaping (O, T) -> Void) {
         lock.lock()
         defer { lock.unlock() }
