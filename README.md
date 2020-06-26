@@ -122,7 +122,7 @@ The last step is to use the theme using the `ObservableTheme` _property wrapper_
 
 ```swift
 class ViewController: UIViewController {
-		@ObservableTheme var theme: ViewTheme
+    @ObservableTheme var theme: ViewTheme
 }
 ```
 
@@ -130,7 +130,8 @@ The `theme` can be observed on when the `stylesheet` has changed:
 
 ```swift
 class ViewController: UIViewController {
-		@ObservableTheme var theme: ViewTheme
+    @ObservableTheme var theme: ViewTheme
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -146,8 +147,6 @@ class ViewController: UIViewController {
 
 `ObservableTheme` provides `projectedValue` which is `Observable`.
 
-
-
 It is important to mention that the `ViewTheme` implements the `Theme` protocol which means that the `struct` needs to provide
 
 `default`, `stylesheet` `static` properties and the constructor `init` .
@@ -160,7 +159,7 @@ Because most of the time this is not useful to have declaration of the theme lik
 struct ViewTheme: Theme {
     static let `default`: ViewController.ViewTheme = .init(stylesheet: AppStylesheet())
     static let stylesheet: Observable = Observable(AppStylesheet())
-		...
+    ...
 }
 ```
 
@@ -168,7 +167,6 @@ If personally find useful to declare default implementation of the `stylesheet` 
 
 ```swift
 extension Theme {
-    /// Default stylesheet for the convenience
     static var stylesheet: Observable<Stylesheet> {
         return AppStylesheet.shared
     }
@@ -180,7 +178,7 @@ Having that you can then declare a theme:
 ```swift
 struct ViewTheme: Theme {
     static let `default`: ViewController.ViewTheme = .init(stylesheet: Self.stylesheet.wrappedValue)
-		...
+    ...
 }
 ```
 
