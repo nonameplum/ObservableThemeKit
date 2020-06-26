@@ -1,7 +1,0 @@
-# ObservableThemeKit document generator jazzy settings
-
-copyright: Copyright 2020 plum
-author: Łukasz Śliwiński
-xcodebuild_arguments: [-target, ObservableThemeKit-iOS]
-clean: true
-output: ./Documentation
