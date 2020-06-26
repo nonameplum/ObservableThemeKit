@@ -26,7 +26,6 @@
 ObservableThemeKit framework allows to easily theme an application. It utilizes protocol oriented programming, property wrapper and observable pattern which allows to customize every aspect of a theme specification for your requirements.
 </p>
 
-
 ## Features
 
 - [x] Uses property wrappers to easlily access a defined theme
@@ -81,6 +80,8 @@ Alternatively navigate to your Xcode project, select `Swift Packages` and click 
 If you prefer not to use any of the aforementioned dependency managers, you can integrate ObservableThemeKit into your project manually. Simply drag the `Sources` Folder into your Xcode project.
 
 ## Usage
+
+[Documentation](https://nonameplum.github.io/ObservableThemeKit/)
 
 The best way is to take a look at the [example app](##Example) and the [playground](##Playground).
 
