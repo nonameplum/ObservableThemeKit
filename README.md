@@ -96,7 +96,7 @@ public protocol Theme {
 }
 ```
 
-The idea is to provide a `Style` that will be used by themes e.g:
+The idea is to provide a `Style`:
 
 ```swift
 struct AppStylesheet {
@@ -104,7 +104,7 @@ struct AppStylesheet {
 }
 ```
 
-Then you can declare the first theme like so:
+that will be used by a theme:
 
 ```swift
 struct ViewTheme: Theme {
@@ -127,7 +127,7 @@ class ViewController: UIViewController {
 }
 ```
 
-The `theme` can be observed on when the `stylesheet` has changed:
+The `theme` can be observed when the `stylesheet` has changed:
 
 ```swift
 class ViewController: UIViewController {
@@ -152,9 +152,11 @@ It is important to mention that the `ViewTheme` implements the `Theme` protocol 
 
 `default`, `stylesheet` `static` properties and the constructor `init` .
 
+It uses similar concept as SwiftUI's [Environment](https://developer.apple.com/documentation/swiftui/environment) and related to it [EnvironmentKey](https://developer.apple.com/documentation/swiftui/environmentkey).
+
 It is used by the `ObservableTheme` to instantiate the theme, observe the changes of the `stylesheet` and instantiate the new theme on every change and put it back via mentioned observable `projectedValue` .
 
-Because most of the time this is not useful to have declaration of the theme like so, especially the `stylesheet` property:
+Most of the time you will find that you would like to provide a convenience way of the `default` and `stylesheet` implementation instead as in this example:
 
 ```swift
 struct ViewTheme: Theme {
@@ -164,7 +166,7 @@ struct ViewTheme: Theme {
 }
 ```
 
-If personally find useful to declare default implementation of the `stylesheet` in the `extension`:
+I personally find useful to declare default implementation of the `stylesheet` in the `extension`:
 
 ```swift
 extension Theme {
@@ -183,7 +185,7 @@ struct ViewTheme: Theme {
 }
 ```
 
-But as you will find in the examples, there is a lot of ways how you can provide the `default` and `stylesheet`. It is up to you, it might be singleton, global variable or any other solution that will suit your needs.
+But as you will find in the examples, there is a lot of ways how you can provide the `default` and `stylesheet`. It is up to you, it might be singleton, global variable, service locator or any other solution that will suit your needs.
 
 ## Contributing
 Contributions are very welcome 🙌
